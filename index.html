@@ -1,8 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>
-      build my website
-    </h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenzie Suyanto - Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #444;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    p.bio {
+      font-size: 16px;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      margin: 20px 0;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #2a2a2a;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .email {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .email:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img 
+      src="https://source.unsplash.com/140x140/?portrait,boy" 
+      alt="Kenzie Suyanto" 
+      class="profile-img"
+    />
+    <h1>Kenzie Suyanto</h1>
+    <p class="bio">I was born in Pekanbaru, Riau on 2 Feb 2010.</p>
+
+    <div class="skills">
+      <span>Web Programmer</span>
+      <span>Drone Driver</span>
+      <span>Motor Cycle</span>
+    </div>
+
+    <p>Contact me: <a class="email" href="mailto:kenzie@sekolahmcs.net">kenzie@sekolahmcs.net</a></p>
+  </div>
+
+</body>
 </html>
